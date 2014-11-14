@@ -1,4 +1,21 @@
-.done-true {
+.Work-true {
     text-decoration: line-through;
     color: grey;
+}
+.Work-false {
+    background-color: pink;
+}
+.Personal-true {
+    text-decoration: line-through;
+    color: grey;
+}
+.Personal-false {
+    background-color:  lightgreen;
+}
+.Other-true {
+    text-decoration: line-through;
+    color: grey;
+}
+.Other-false {
+    background-color:  lightblue;
 }

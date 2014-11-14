@@ -11,18 +11,25 @@ angular.module('ToDoApp', [])
             text: 'Finish this app',
             is_done: false,
             rank: 2,
-            label: 'Work'
+            label: 'Personal'
         }
     ];
+    $scope.labels = ['Work', 'Personal', 'Other'];
+    $scope.options = [1, 2];
     $scope.add_item = function() {
-        $scope.todos.push({text: $scope.todo_text, is_done: false});
+        $scope.todos.push({text: $scope.todo_text, is_done: false, rank: 1, label: 'Work'});
         $scope.todo_text = '';
+        $scope.options.push($scope.options.length + 1);
     };
     $scope.clear = function() {
         var all_todos = $scope.todos;
         $scope.todos = [];
+        $scope.options = [];
         angular.forEach(all_todos, function(todo) {
-            if(!todo.is_done) $scope.todos.push(todo);
+            if(!todo.is_done) {
+                $scope.todos.push(todo);
+                $scope.options.push($scope.options.length + 1);
+            };
         });
     };
     $scope.remaining = function() {
