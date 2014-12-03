@@ -1,0 +1,48 @@
+.Work-true {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.Work-false {
+    background-color: pink;
+}
+
+.Personal-true {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.Personal-false {
+    background-color:  lightgreen;
+}
+
+.Other-true {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.Other-false {
+    background-color:  lightblue;
+}
+
+body {
+    font-family: Arial;
+    position: fixed;
+    background-image: url("../images/Grey_and_White_Dotted.gif");
+}
+
+.logon {
+    position: fixed;
+    top: 15%;
+    left: 15%;
+}
+
+.app {
+    position: fixed;
+    top: 2%;
+    left: 2%;
+}
+
+.assigned {
+    background-color: lightyellow;
+}
