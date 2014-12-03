@@ -9,7 +9,7 @@ angular.module('ToDoApp', ['ngResource'])
 
     $scope.priority = ['High', 'Medium', 'Low'];
 
-    $scope.purge = function() {git
+    $scope.purge = function() {
         for(var i = 0; i < $scope.todos.length; i++) {
             if(($scope.todos[i].username != $scope.user) && ($scope.todos[i].assigner != $scope.user)) {
                 $scope.todos.splice(i, 1);
